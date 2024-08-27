@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Track</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+            background-size: cover;
+            backdrop-filter: blur(10px);
+        }
+
+        .header {
+            background-image: url('https://static1.srcdn.com/wordpress/wp-content/uploads/2019/07/WALL-E.png');
+            height: 400px;
+            background-size: cover;
+            background-position: center -63px; /* Add this line */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            background-color: #343a40;
+            position: relative;
+        }
+
+
+        .header h1 {
+            font-size: 4em;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header::before {
+            content: "";
+            background-image: url('https://e7.pngegg.com/pngimages/217/645/png-clipart-mechatronics-engineering-robotic-arm-technology-machinery-angle-electronics.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 50%;
+            left: 33%;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            opacity: 0.8;
+            z-index: 0;
+        }
+
+
+        .header h1 {
+            font-size: 4em;
+        }
+        .card {
+            transition: transform 0.2s;
+            text-align: left;
+            border-radius: 15px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .section-title {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            color: #343a40;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .rtl {
+            direction: rtl;
+            text-align: right;
+        }
+        .card-title-1 { color: #007bff; }
+        .card-title-2 { color: #28a745; }
+        .card-title-3 { color: #dc3545; }
+        .card-title-4 { color: #ffc107; }
+        .card-title-5 { color: #17a2b8; }
+        .card-title-6 { color: #6f42c1; }
+        .card-title-7 { color: #fd7e14; }
+        .card-title-8 { color: #20c997; }
+        .card-title-9 { color: #e83e8c; }
+        .card-title-10 { color: #b72e6c; }
+        .card-title-final { color: #343a40; }
+        
+        #author-name {
+            color: #007bff;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        #author-name:hover {
+            color: #0056b3;
+            text-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Django Track</h1>
+</div>
+
+<div class="container my-5">
+    <h2 class="text-center rtl">مرحباً بك في مسار Django</h2>
+
+    <h2 class="section-title text-center rtl">أساسيات بايثون لتطوير الويب (Basics of Python for Web Development)</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card p-3">
+                <h5 class="card-title-1"> (Lesson 1): Introduction to Python</h5>
+                <ul>
+                    <li>Variables, data types, input and output operations.</li>
+                    <li>Control structures (conditions, loops).</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-3">
+                <h5 class="card-title-2"> (Lesson 2): Object-Oriented Programming in Python</h5>
+                <ul>
+                    <li>Classes and objects.</li>
+                    <li>Inheritance, encapsulation, and polymorphism.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-3">
+                <h5 class="card-title-3"> (Lesson 3): Error Handling and Exceptions</h5>
+                <ul>
+                    <li>Try and Except blocks.</li>
+                    <li>Raising exceptions.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title text-center">مقدمة إلى جانغو (Introduction to Django)</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card p-3">
+                <h5 class="card-title-4"> (Lesson 4): Installing Django and Setting Up Your First Project</h5>
+                <ul>
+                    <li>Setting up a virtual environment.</li>
+                    <li>Installation process and creating a new Django project.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-3">
+                <h5 class="card-title-5">(Lesson 5): Django Models and Working with Databases</h5>
+                <ul>
+                    <li>Defining models, data fields, and relationships.</li>
+                    <li>Working with Django ORM.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-3">
+                <h5 class="card-title-6"> (Lesson 6): Django Admin Interface</h5>
+                <ul>
+                    <li>Setting up and configuring the admin interface.</li>
+                    <li>Adding and modifying models.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title text-center rtl">تعميق الفهم لجانغو (Deepening Understanding of Django)</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card p-3">
+                <h5 class="card-title-7"> (Lesson 7): Handling Requests and Forms</h5>
+                <ul>
+                    <li>Django views, URL mapping.</li>
+                    <li>Forms and form validations.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-3">
+                <h5 class="card-title-8"> (Lesson 8): Styling and User Interfaces with CSS and JavaScript</h5>
+                <ul>
+                    <li>Basics of CSS and JavaScript.</li>
+                    <li>Creating dynamic HTML templates.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-3">
+                <h5 class="card-title-9"> (Lesson 9): Building REST API with Django REST Framework</h5>
+                <ul>
+                    <li>Principles of RESTful services.</li>
+                    <li>Building an API using Django REST Framework.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-3">
+                <h5 class="card-title-10"> (Lesson 10): Advanced Django Techniques</h5>
+                <ul>
+                    <li>Custom middleware and signals.</li>
+                    <li>Optimizing database queries.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <h2 class="section-title text-center"> (AI in Project Development)</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card p-3 rtl">
+                <h5 class="card-title-ai">استخدام الذكاء الاصطناعي في المشاريع (Using AI in Projects)</h5>
+                <ul>
+                    <li>استخدام نماذج اللغة الكبيرة (large language models) مثل Gemini, GPT, BERT, وT5.</li>
+                    <li>حل المشكلات في Django, CSS, JavaScript</li>
+                    <li>تحسين الكود وتوليد الأفكار (Improving code and generating ideas)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <h2 class="section-title text-center rtl">المشروع النهائي (Final Project)</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card p-3">
+                <h5 class="card-title-final"> (Final Project)</h5>
+                <ul>
+                    <li>Designing and building a complete web application using Django.</li>
+                    <li>Integrating elements learned with JavaScript and CSS.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title text-center rtl">الجدول الزمني (Timeline)</h2>
+    <ul class="list-group">
+        <li class="list-group-item">Week 1-2: Basics of Python for Web Development</li>
+        <li class="list-group-item">Week 3-4: Introduction to Django</li>
+        <li class="list-group-item">Week 5-6: Deepening Understanding of Django</li>
+        <li class="list-group-item">Week 7: Final Project</li>
+    </ul>
+</div>
+
+<div class="text-center mt-5">
+    <p>© 2024 <span id="author-name">Mohamed Emad</span></p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
